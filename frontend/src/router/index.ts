@@ -16,8 +16,8 @@ const router = createRouter({
     { path: '/dashboard', name: 'dashboard', component: () => import('../views/VenueDashboardView.vue') },
     { path: '/forgot-password', name: 'forgot-password', component: ForgotPasswordView },
     { path: '/reset-password', name: 'reset-password', component: ResetPasswordView },
-    // Perbaikan ada di baris ini
-    { path: '/add-venue', name: 'add-venue', component: () => import('../views/AddVenueView.vue') }, 
+    // PERBAIKAN DI SINI
+    { path: '/add-venue', name: 'add-venue', component: () => import('../views/View.vue') }, 
     { 
       path: '/venues/:id/edit', 
       name: 'edit-venue', 

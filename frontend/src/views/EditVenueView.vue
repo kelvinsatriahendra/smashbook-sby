@@ -19,7 +19,8 @@ const handleImageUpload = async () => {
   isLoading.value = true;
   const venueId = route.params.id;
   const formData = new FormData();
-  formData.append('image', selectedFile.value[0]);
+  // PERBAIKAN DI SINI
+  formData.append('image', selectedFile.value[0]); 
 
   try {
     await api.post(`/venues/${venueId}/upload-image`, formData, {

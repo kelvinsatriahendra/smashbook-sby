@@ -12,10 +12,11 @@ interface Venue {
   image_url: string;
 }
 
-const venues = ref<Venue[]>([])
-const isLoading = ref(true)
-const error = ref<string | null>(null)
-const authStore = useAuthStore()
+// PERBAIKAN TIPE DATA DI SINI
+const venues = ref<Venue[]>([]); 
+const isLoading = ref(true);
+const error = ref<string | null>(null);
+const authStore = useAuthStore();
 
 const fetchVenues = async () => {
   try {
